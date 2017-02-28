@@ -1,1 +1,12 @@
 body{background-color: #000; !important}
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   border: none;
+   border-radius: 0;
+   background-color: rgba(0,0,0,0.5);
+}
+
+.navbar li { color: #000 } 
