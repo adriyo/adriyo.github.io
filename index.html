@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,216 +11,180 @@
     <meta name="author" content="adriyoutomo">
     <link rel="icon" href="favicon.ico">
     <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="css/custom.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-  	<nav class="navbar navbar-inverse navbar-fixed-top">
-	  	<div class="container">
-	  		<div class="navbar-header">
-	  			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-		            <span class="sr-only">Toggle navigation</span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-	          	</button>
-	          	<a class="navbar-brand" href="#">adriyo.github.io</a>
-	  		</div>
-	  		<div id="navbar" class="navbar-collapse collapse">
-	          <ul class="nav navbar-nav navbar-right">
-	            <li><a href="https://www.facebook.com/adriyoutomo">Adri</a></li>
-	            <li><a href="https://www.twitter.com/adriyoutomo">Driyo</a></li>
-	            <li><a href="#">Utomo</a></li>
-	          </ul>
-	  		</div>
-	  	</div>
-  	</nav>
-	<div class="jumbotron" style="background:transparent !important">
-		<div style="min-height: 50px;">
-        <!-- Jssor Slider Begin -->
-        <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
-        <!-- ================================================== -->
-        <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto;
-        top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
-            <!-- Loading Screen -->
-            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
-                top: 0px; left: 0px; width: 100%; height: 100%;">
-                </div>
-                <div style="position: absolute; display: block; background: url(http://i.giphy.com/pK4av7uBK3I4M.gif) no-repeat center center;
-                top: 0px; left: 0px; width: 100%; height: 100%;">
-                </div>
-            </div>
-            <!-- Slides Container -->
-            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
-                <div>
-                    <img u="image" src2="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-272401.jpg" />
-                </div>
-                <div>
-                    <img u="image" src2="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-488333.jpg" />
-                </div>
-                <div>
-                    <img u="image" src2="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-359800.jpg" />
-                </div>
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    
+    <!--Navigation -->
+    <nav class="navbar navbar-fixed-top navbar-custom" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-transgender"></i> <span class="light">a</span>dri<span class="light">youtomo</span>   
+                </a>
             </div>
-            
-            <!--#region Bullet Navigator Skin Begin -->
-            <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
-            <style>
-                /* jssor slider bullet navigator skin 21 css */
-                /*
-                .jssorb21 div           (normal)
-                .jssorb21 div:hover     (normal mouseover)
-                .jssorb21 .av           (active)
-                .jssorb21 .av:hover     (active mouseover)
-                .jssorb21 .dn           (mousedown)
-                */
-                .jssorb21 {
-                    position: absolute;
-                }
-                .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
-                    position: absolute;
-                    /* size of bullet elment */
-                    width: 19px;
-                    height: 19px;
-                    text-align: center;
-                    line-height: 19px;
-                    color: white;
-                    font-size: 12px;
-                    background: url(http://www.jssor.com/img/b21.png) no-repeat;
-                    overflow: hidden;
-                    cursor: pointer;
-                }
-                .jssorb21 div { background-position: -5px -5px; }
-                .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
-                .jssorb21 .av { background-position: -65px -5px; }
-                .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
-            </style>
-            <!-- bullet navigator container -->
-            <div u="navigator" class="jssorb21" style="bottom: 16px; right: 6px;">
-                <!-- bullet navigator item prototype -->
-                <div u="prototype"></div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#gallery">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <!--#endregion Bullet Navigator Skin End -->
-            
-            <!--#region Arrow Navigator Skin Begin -->
-            <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
-            <style>
-                /* jssor slider arrow navigator skin 21 css */
-                /*
-                .jssora21l                  (normal)
-                .jssora21r                  (normal)
-                .jssora21l:hover            (normal mouseover)
-                .jssora21r:hover            (normal mouseover)
-                .jssora21l.jssora21ldn      (mousedown)
-                .jssora21r.jssora21rdn      (mousedown)
-                */
-                .jssora21l, .jssora21r {
-                    display: block;
-                    position: absolute;
-                    /* size of arrow element */
-                    width: 55px;
-                    height: 55px;
-                    cursor: pointer;
-                    background: url(http://www.jssor.com/img/a21.png) center center no-repeat;
-                    overflow: hidden;
-                }
-                .jssora21l { background-position: -3px -33px; }
-                .jssora21r { background-position: -63px -33px; }
-                .jssora21l:hover { background-position: -123px -33px; }
-                .jssora21r:hover { background-position: -183px -33px; }
-                .jssora21l.jssora21ldn { background-position: -243px -33px; }
-                .jssora21r.jssora21rdn { background-position: -303px -33px; }
-            </style>
-            <!-- Arrow Left -->
-            <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
-            </span>
-            <!-- Arrow Right -->
-            <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
-            </span>
-            <!--#endregion Arrow Navigator Skin End -->
-            <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
+            <!-- /.navbar-collapse -->
         </div>
-        <!-- Jssor Slider End -->
-    </div>
+    </nav>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <!--<h1 class="brand-heading">static</h1>
+                        <hr/>
+                        <p class="intro-text">Fresh from the oven
+                        </br>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a> -->
+                        <h1>the end is near</h1>
+                        <hr/>
+                        <p class="intro-text"><small>just random text about this site</small></p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Not sure if this is the real life</h2> 
+                <h2>or</h2>
+                <h2>if it's just fantasy...</h2>
+            </div>
+        </div>
+    </section>
 
-	</div>
-	
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!-- jssor slider scripts-->
-    <!-- use jssor.js + jssor.slider.js instead for development -->
-    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
-    <script type="text/javascript" src="js/jssor.slider-22.2.10.min.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
+    <!-- Download Section -->
+    <section id="gallery" class="content-section text-center">
+        <div class="gallery-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Random Pictures</h2>
+                    <div class="row">
+                        <a href="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-488333.jpg"
+                            data-fancybox="images"
+                            class="col-xs-6 col-md-4" 
+                            data-caption="Look at me">
+                            <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-488333.jpg"
+                            class="img-thumbnail"
+                            width="240" />
+                        </a>
+                        <a href="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-359800.jpg"
+                            data-fancybox="images"
+                            class="col-xs-6 col-md-4"
+                            data-caption="Oh no...">
+                            <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-359800.jpg"
+                            class="img-thumbnail"
+                            width="240" />
+                        </a>
+                        <a href="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-182557.jpg"
+                            data-fancybox="images"
+                            class="col-xs-6 col-md-4" 
+                            data-caption="Look at me">
+                            <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-182557.jpg"
+                            class="img-thumbnail"
+                            width="240" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            var options = {
-                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
-                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-                $Idle: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Me!</h2>
+                <p>Feel free to say hello </p>
+                <p><a href="mailto:adriyoutomo@gmail.com">adriyoutomo@gmail.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://www.twitter.com/adriyoutomo" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/adriyo" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/adriyoutomo" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/adriyoutomo" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
-                $SlideEasing: $Jease$.$OutQuint,          //[Optional] Specifies easing for right to left animation, default value is $Jease$.$OutQuad
-                $SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
-                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
-                $Cols: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
-                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
-                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $Cols is greater than 1, or parking position is not 0)
-              
-                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
-                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
-                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
-                    $Rows: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
-                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
-                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
-                    $Orientation: 1,                                //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
-                    $Scale: false                                   //Scales bullets navigator or not while slider scale
-                },
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <h6>Copyright &copy; adriyoutomo 2016 - 
+            <a href="https://github.com/BlackrockDigital/startbootstrap-grayscale">grayscale template</a></h6>
+        </div>
+    </footer>
 
-                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
-                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
-                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
-                }
-            };
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
 
-            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizing
-            function ScaleSlider() {
-                var bodyWidth = document.body.clientWidth;
-                if (bodyWidth)
-                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
-                else
-                    window.setTimeout(ScaleSlider, 30);
-            }
-            ScaleSlider();
+    <!-- Plugin slider -->
+    <script src="js/jssor.slider-22.2.10.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
 
-            $(window).bind("load", ScaleSlider);
-            $(window).bind("resize", ScaleSlider);
-            $(window).bind("orientationchange", ScaleSlider);
-            //responsive code end
-        });
-    </script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-  </body>
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+</body>
+
 </html>
