@@ -10,181 +10,127 @@
     <meta name="description" content="Adri Driyo Utomo, the ordinary guy, developer wannabe. Not sure if this is the real life or if it's just fantasy. ">
     <meta name="author" content="adriyoutomo">
     <link rel="icon" href="favicon.ico">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <style type="text/css">
+        .header-image {
+            background-image: url(img/intro-bg.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #999;
+        }
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        .image--cover {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid rgb(255, 255, 255);
+            margin: 20px;
 
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
-
-    <!-- Theme CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+            object-fit: cover;
+            object-position: center right;
+        }
+    </style>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    
-    <!--Navigation -->
-    <nav class="navbar navbar-fixed-top navbar-custom" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-transgender"></i> <span class="light">a</span>dri<span class="light">youtomo</span>   
-                </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#gallery">Gallery</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-    </nav>
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <!--<h1 class="brand-heading">static</h1>
-                        <hr/>
-                        <p class="intro-text">Fresh from the oven
-                        </br>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a> -->
-                        <h1>the end is near</h1>
-                        <hr/>
-                        <p class="intro-text"><small>just random text about this site</small></p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
+<body>
+    <section id="container" class="hero animated fadeIn is-fullheight is-dark is-default header-image">
+        <div class="hero-head has-shadow">
+            <header class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item is-uppercase">
+                            a
+                            <span class="has-text-weight-bold">dri</span>youtomo
                         </a>
+                        <span class="navbar-burger burger is-hidden" data-target="navbarMenuHeroC">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroC" class="navbar-menu">
+                        <div class="navbar-end">
+                            <div class="tabs is-right is-hidden">
+                                <ul>
+                                    <li class="is-active">
+                                        <a>About</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <section class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-12 is-dark is-success">
+                        <img id="img-profile" src="img/profile_picture.jpg" class="image--cover">
+                        <h1 class="title is-bold" style="display:none">
+                            Hi, i'm Adri Driyo Utomo
+                        </h1>
+                        <h2 class="subtitle" style="display:none">
+                            Android Developer
+                        </h2>
+                        <div class="menu-social-media" style="display:none">
+                            <a href="https://www.twitter.com/adriyoutomo" class="button is-primary is-outlined animated fadeIn">
+                                <i class="fab fa-twitter fa-fw"></i>
+                                <span class="Twitter">Twitter</span>
+                            </a>
+                            <a href="https://github.com/adriyo" class="button is-primary is-outlined animated fadeIn">
+                                <i class="fab fa-github"></i>
+                                <span class="Github">Github</span>
+                            </a>
+                            <a href="https://www.facebook.com/adriyoutomo" class="button is-primary is-outlined animated fadeIn">
+                                <i class="fab fa-facebook fa-fw"></i>
+                                <span class="Facebook">Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/adriyoutomo" class="button is-primary is-outlined animated fadeIn">
+                                <i class="fab fa-instagram fa-fw"></i>
+                                <span class="Instagram">Instagram</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Not sure if this is the real life</h2> 
-                <h2>or</h2>
-                <h2>if it's just fantasy...</h2>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="gallery" class="content-section text-center">
-        <div class="gallery-section">
+        </section>
+        <div class="hero-foot">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Random Pictures</h2>
-                    <div class="row">
-                        <a href="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-488333.jpg"
-                            data-fancybox="images"
-                            class="col-xs-6 col-md-4" 
-                            data-caption="Look at me">
-                            <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-488333.jpg"
-                            class="img-thumbnail"
-                            width="240" />
-                        </a>
-                        <a href="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-359800.jpg"
-                            data-fancybox="images"
-                            class="col-xs-6 col-md-4"
-                            data-caption="Oh no...">
-                            <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-359800.jpg"
-                            class="img-thumbnail"
-                            width="240" />
-                        </a>
-                        <a href="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-182557.jpg"
-                            data-fancybox="images"
-                            class="col-xs-6 col-md-4" 
-                            data-caption="Look at me">
-                            <img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-182557.jpg"
-                            class="img-thumbnail"
-                            width="240" />
-                        </a>
-                    </div>
+                <div class="tabs is-centered">
+                    <h6>Copyright &copy; adriyoutomo 2018
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Me!</h2>
-                <p>Feel free to say hello </p>
-                <p><a href="mailto:adriyoutomo@gmail.com">adriyoutomo@gmail.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://www.twitter.com/adriyoutomo" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/adriyo" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/adriyoutomo" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/adriyoutomo" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <h6>Copyright &copy; adriyoutomo 2016 - 
-            <a href="https://github.com/BlackrockDigital/startbootstrap-grayscale">grayscale template</a></h6>
-        </div>
-    </footer>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $('#img-profile').addClass('animated bounceInLeft');
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin slider -->
-    <script src="js/jssor.slider-22.2.10.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/grayscale.min.js"></script>
+        setTimeout(function () {
+            $('.title').show().addClass('animated fadeInUp');
+        }, 1000);
+        setTimeout(function () {
+            $('.subtitle').show().addClass('animated fadeInUp');
+        }, 2000);
+        setTimeout(function () {
+            $('.menu-social-media').show().addClass('animated fadeInUp');
+        }, 3000);
+        //Photo by Marc Zimmer on Unsplash
+    </script>
 </body>
 
 </html>
